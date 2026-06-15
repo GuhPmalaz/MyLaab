@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Linux Sysadmin Lab
 **Pemilik:** bsantoso (IT Administrator Trainee)
 **Skenario:** Klinik Pratama Sehat Bersama — klinik swasta skala kecil, ~20 karyawan
@@ -54,3 +55,7 @@ Setiap project punya:
 ---
 
 *Bagian dari persiapan magang — jalur Sysadmin & ERP Admin*
+=======
+# MyLaab
+ini adalah roadmap saya belajar explore linux
+>>>>>>> b0c9911d760987aa4207d23d89feadc6f5c37f7c
