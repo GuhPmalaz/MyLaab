@@ -44,17 +44,9 @@ Setiap project punya:
 
 ---
 
-## Referensi Utama
-
-- [Ubuntu Server Guide](https://ubuntu.com/server/docs)
-- [CIS Benchmark Ubuntu](https://www.cisecurity.org/benchmark/ubuntu_linux)
-- [ArchWiki — Users and Groups](https://wiki.archlinux.org/title/Users_and_groups)
-- [Linux PAM](https://www.linux-pam.org/Linux-PAM-html/)
-- [WSL2 Docs](https://learn.microsoft.com/en-us/windows/wsl)
-
 ---
 
-*Bagian dari persiapan magang — jalur Sysadmin & ERP Admin*
+*Proses dokumntasi belajar*
 =======
 # MyLaab
 ini adalah roadmap saya belajar explore linux
