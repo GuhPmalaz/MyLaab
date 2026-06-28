@@ -1,0 +1,7 @@
+Recovery Point Objective,,,,,,
+Recovery Time Objective,,< 1 Menit,<1 Jam,<  6 Jam,<1 Hari,+ 1 Hari 
+,< 10 Menit,Critical,Critical,High,Medium,Medium
+,< 2 Jam,Critical,High,Medium,Medium,Low
+,< 8 Jam ,High,Medium,Medium,Low,Low
+,< 24 Jam,Medium,Medium,Low,Low,Low
+,24 + Jam,Medium,Low,Low,Low,Low
