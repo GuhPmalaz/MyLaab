@@ -1,0 +1,62 @@
+services:
+  nginx:
+    container_name: klinik_nginx
+    build: ./nginx
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - ./php/www/booking-klinik:/var/www/html:ro
+      - ./volumes/nginx-logs:/var/log/nginx
+    depends_on:
+      - php
+    networks:
+      - klinik-net
+    restart: unless-stopped
+    user: "1000:1000"
+
+  php:
+    build: ./php
+    container_name: klinik_php
+    networks:
+      - klinik-net
+    volumes:
+      - ./php/www/booking-klinik:/var/www/html
+    user: "1000:1000"
+  mariadb:
+    image: mariadb:10.11
+    container_name: klinik_db
+    env_file:
+      - ./.env
+    volumes:
+      - ./volumes/mariadb-data:/var/lib/mysql
+    networks:
+      - klinik-net
+    restart: unless-stopped
+    user: "1000:1000"
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: klinik_pma
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: mariadb
+    networks:
+      - klinik-net
+    restart: unless-stopped
+    user: "1000:1000"
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: klinik_portiner
+    ports:
+      - '9443:9443'
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portiner_data:/data
+    user: "1000:1000"
+    restart: unless-stopped
+volumes:
+  portiner_data:
+networks:
+  klinik-net:
+    driver: bridge
