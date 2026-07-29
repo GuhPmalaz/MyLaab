@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Linux Sysadmin Lab
 **Pemilik:** bsantoso (IT Administrator Trainee)
 **Skenario:** Klinik Pratama Sehat Bersama — klinik swasta skala kecil, ~20 karyawan
